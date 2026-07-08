@@ -1,10 +1,10 @@
 # Graph RL for Network Interdiction Problem
 
-This project is a clean, well-engineered demonstration of a Graph Neural Network + Reinforcement Learning (GraphRL) pipeline applied to the Network Interdiction problem. It serves as an educational exercise to show how to formulate combinatorial edge-selection problems as RL tasks using modern PyTorch libraries.
+This project is a demonstration of a Graph Neural Network + Reinforcement Learning (GraphRL) pipeline applied to the Network Interdiction problem. It serves as an educational exercise to show how to formulate combinatorial edge-selection problems as RL tasks using modern PyTorch libraries.
 
 **Motivation**: Network Interdiction is a two-player game where an interdictor (blue team) removes edges from a flow network to minimize the maximum flow achievable by an operator (red team). Classical solvers struggle with large graphs. DeepRL, specifically using GNNs, can learn heuristics that operate quickly at inference time.
 
-**Relation to Reference**: This project was inspired by and adapts the GNN-RL architecture from [RL-with-GNNs](https://github.com/alex-schutz/RL-with-GNNs) (Schutz & Darvariu, ICLR 2026 Blogpost Track). We diverge by formulating the environment specifically for edge-actions via Line Graph transformation and employing a simplified MLP-based action head.
+**Reference**: This project adapts the GNN-RL architecture from [RL-with-GNNs](https://github.com/alex-schutz/RL-with-GNNs) (Schutz & Darvariu, ICLR 2026 Blogpost Track). We diverge by formulating the environment specifically for edge-actions via Line Graph transformation and employing a simplified MLP-based action head as well as formulating the network interdiction problem as described in [Graph Reinforcement Learning for Courses of Action Analysis]([10.1109/ICMCIS61231.2024.10540763](https://ieeexplore.ieee.org/document/10540763)).
 
 ## Architecture Overview
 
