@@ -33,6 +33,12 @@ pip install networkx numpy matplotlib plotly jupyter
    python train.py --network GAT --timesteps 50000
    ```
 
+## Evaluation Results
+
+![GNN Architecture Comparison](images/gnn_comparison.png)
+
+![Agent Performance vs Inference Graph Size](images/eval_graph_size.png)
+
 ## Project Structure
 
 ```
