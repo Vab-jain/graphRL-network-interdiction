@@ -83,6 +83,7 @@ def evaluate(run_id: int, config: ExperimentConfig, eval_graph_sizes: tuple):
         eval_cfg = config.train_graph_cfg
         eval_cfg.num_cols = num_cols
         eval_cfg.nodes_per_col = nodes_per_col
+        eval_cfg.max_line_graph_nodes = max(100, size * 4)
         
         test_env = VecMonitor(DummyVecEnv([lambda: NetworkInterdictionEnv(eval_cfg, seed=100+size, is_eval=True)]))
         model.policy = change_obs_action_space(model.policy, test_env)
