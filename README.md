@@ -44,11 +44,11 @@ pip install networkx numpy matplotlib plotly jupyter
 ```
 graph_nip/
 ├── config.py         # Configuration dataclasses
-├── graph_gen.py      # Flow network generator (Task 1)
-├── utils.py          # Line graph conversion (Task 2)
-├── env.py            # Gym environment (Tasks 3 & 4)
+├── graph_gen.py      # Flow network generator
+├── utils.py          # Line graph conversion
+├── env.py            # Gym environment
 ├── gnns.py           # PyG Neural Networks (GCN, GAT, GraphSAGE)
-└── policy.py         # Custom SB3 Policy with MLP Head (Task 5)
+└── policy.py         # Custom SB3 Policy with MLP Head
 train.py              # Training script
 ```
 
